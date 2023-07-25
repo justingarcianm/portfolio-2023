@@ -1,5 +1,3 @@
-import { LinkIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
-
 const Project = () => {
   return (
     <div className="rounded shadow-md">
@@ -16,12 +14,8 @@ const Project = () => {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, eum.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, eum.</p>
         <div className="flex justify-end gap-4 items-center">
-          <a href="#">
-            <LinkIcon />
-          </a>
-          <a href="#">
-            <CodeBracketIcon />
-          </a>
+          <a href="#">{/* <LinkIcon /> */}</a>
+          <a href="#">{/* <CodeBracketIcon /> */}</a>
         </div>
       </div>
     </div>
