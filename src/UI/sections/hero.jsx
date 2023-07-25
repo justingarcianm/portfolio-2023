@@ -11,10 +11,11 @@ const Hero = () => {
           </div>
           <div className="col-span-5 lg:col-span-2">
             <p className="mb-4">
-              I have a passion for creating user-friendly and visually appealing websites. I specialize in using Javascript and PHP to develop web applications. Using tools such as Next JS and Wordpress that solve real-world problems and have a keen eye for detail when it comes to customizing these
-              platforms to meet specific client needs.
+              {
+                "I have a passion for creating user-friendly and visually appealing websites. I specialize in using Javascript and PHP to develop web applications. Using tools such as Next JS and Wordpress that solve real-world problems and have a keen eye for detail when it comes to customizing these platforms to meet specific client needs."
+              }
             </p>
-            <p>I am a collaborative team player who enjoys working with others to bring projects to life. My interpersonal skills enable me to communicate effectively with clients and team members, ensuring that projects are completed on time and within budget.</p>
+            <p>{"I am a collaborative team player who enjoys working with others to bring projects to life. My interpersonal skills enable me to communicate effectively with clients and team members, ensuring that projects are completed on time and within budget."}</p>
           </div>
         </div>
       </div>
