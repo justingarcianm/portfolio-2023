@@ -12,6 +12,15 @@ module.exports = {
         "primary-dark": "#495159",
         "accent-dark": "#00A7E1",
       },
+      keyframes: {
+        typing: {
+          "0%, 100%": { opacity: "0" },
+          "50%": { opacity: "1" },
+        },
+      },
+      animation: {
+        typing: "typing 1s ease infinite",
+      },
     },
   },
   plugins: [],

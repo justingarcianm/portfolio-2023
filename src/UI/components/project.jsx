@@ -26,7 +26,7 @@ const Project = ({ project }) => {
             {skills &&
               skills.map((skill) => (
                 <span
-                  className="rounded-2xl text-primary bg-accent dark:bg-accent-dark py-1 px-4"
+                  className="text-white bg-accent dark:bg-accent-dark py-1 px-4"
                   key={skill.id}
                 >
                   {skill.title}
@@ -35,21 +35,25 @@ const Project = ({ project }) => {
           </div>
         </div>
         {description}
-        <div className="flex justify-between gap-4 items-center border-t-2 border-primary-dark pt-2 mt-2">
+        <div className="flex justify-between gap-4 items-center border-t-2 border-primary-dark dark:border-primary pt-2 mt-2">
           <div>
             <h4 className="text-l font-bold">{category.title}</h4>
           </div>
           <div className="flex justify-center gap-4 items-center">
             <a
-              href={repoLink}
+              href={demoLink}
               target="_blank"
+              className="flex gap-1 items-center hover:text-accent dark:hover:text-accent-dark"
             >
+              Demo link
               <BiLink />
             </a>
             <a
-              href={demoLink}
+              href={repoLink}
               target="_blank"
+              className="flex gap-1 items-center hover:text-accent dark:hover:text-accent-dark"
             >
+              Repo link
               <BsGithub />
             </a>
           </div>

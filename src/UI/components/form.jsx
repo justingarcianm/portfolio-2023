@@ -1,3 +1,5 @@
+import { BsFillSendFill } from "react-icons/bs";
+
 const Form = () => {
   return (
     <form>
@@ -19,10 +21,11 @@ const Form = () => {
           rows="8"
         />
         <input
-          className="rounded-lg p-2 bg-primary text-accent dark:text-accent-dark text-xl shadow-sm border-primary"
+          className="rounded-lg p-2 bg-primary text-accent dark:text-accent-dark text-xl shadow-sm border-primary uppercase font-bold"
           type="submit"
           value="send"
         />
+        {/* <BsFillSendFill /> */}
       </div>
     </form>
   );

@@ -23,7 +23,7 @@ const Projects = ({ projects }) => {
   return (
     <section className="min-h-screen flex justify-center items-center">
       <div className="container mx-auto py-8">
-        <h2 className="font-bold text-6xl text-center text-accent dark:text-accent-dark">My Projects</h2>
+        <h2 className="font-bold text-6xl text-center text-accent dark:text-accent-dark pb-6 uppercase">My Projects</h2>
         <ProjectFilter />
         <motion.div
           variants={variant}
@@ -48,7 +48,7 @@ const Projects = ({ projects }) => {
         <a
           href="#"
           target="_blank"
-          className="rounded-full py-2 px-4 text-primary bg-accent dark:bg-accent-dark text-center w-fit mx-auto"
+          className="rounded-full py-2 px-4 text-white bg-accent dark:bg-accent-dark text-center w-fit mx-auto"
         >
           View more on my github
         </a>

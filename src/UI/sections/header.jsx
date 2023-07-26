@@ -3,6 +3,7 @@ import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import GithubIcon from "../icons/github";
 
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
@@ -51,10 +52,11 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link
             href={"/"}
-            className="font-title text-2xl font-semibold text-accent dark:text-accent-dark "
+            className="font-title text-2xl font-semibold text-accent dark:text-accent-dark tracking-wide flex items-center justify-center"
             passHref
           >
             CodingJustin
+            <span className="animate-typing">_</span>
           </Link>
           <div className="flex justify-normal items-center gap-4">
             <GithubIcon />

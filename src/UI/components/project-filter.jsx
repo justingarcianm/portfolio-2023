@@ -4,7 +4,7 @@ const ProjectFilter = (projects) => {
   const { activeProjects, projectCategories, projectSkills } = GlobalState();
 
   return (
-    <div className="my-4 bg-accent dark:bg-accent-dark text-primary rounded-md shadow-sm p-4 flex justify-between items-center">
+    <div className="my-4 bg-accent dark:bg-accent-dark text-white rounded-md shadow-sm p-4 flex justify-between items-center">
       <div className="flex justify-start gap-2 items-center">
         <h4 className="text-l font-bold">Filter by skill:</h4>
         <div className="flex justify-start gap-4 items-center">
@@ -13,7 +13,7 @@ const ProjectFilter = (projects) => {
               return (
                 <div
                   key={skill.id}
-                  className="cursor-pointer"
+                  className="skill-select cursor-pointer px-4 py-1 bg-white rounded-2xl text-accent dark:text-accent-dark hover:scale-105 transition-all"
                 >
                   {skill.title}
                 </div>
@@ -26,7 +26,7 @@ const ProjectFilter = (projects) => {
         <select
           name="categories"
           id="project-categories"
-          className="text-primary bg-transparent outline-none"
+          className="text-white bg-transparent outline-none cursor-pointer"
         >
           <option value="all">All</option>
           {projectCategories &&
