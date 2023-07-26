@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+import ProjectFilter from "../components/project-filter";
 import Project from "../components/project";
 
 const variant = {
@@ -18,27 +19,31 @@ const variant = {
   },
 };
 
-const Projects = () => {
+const Projects = ({ projects }) => {
   return (
     <section className="min-h-screen flex justify-center items-center">
       <div className="container mx-auto py-8">
         <h2 className="font-bold text-6xl text-center text-accent dark:text-accent-dark">My Projects</h2>
+        <ProjectFilter />
         <motion.div
           variants={variant}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="py-8 flex justify-center items-center gap-8 flex-wrap lg:flex-nowrap"
+          className="py-8 grid grid-cols-3 justify-center items-center gap-8"
         >
-          <motion.div variants={variant}>
-            <Project />
-          </motion.div>
-          <motion.div variants={variant}>
-            <Project />
-          </motion.div>
-          <motion.div variants={variant}>
-            <Project />
-          </motion.div>
+          {projects
+            ? projects.map((project) => {
+                return (
+                  <motion.div
+                    variants={variant}
+                    key={project.id}
+                  >
+                    <Project project={project} />
+                  </motion.div>
+                );
+              })
+            : "Loading projects..."}
         </motion.div>
         <a
           href="#"

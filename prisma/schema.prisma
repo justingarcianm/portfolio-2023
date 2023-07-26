@@ -26,14 +26,14 @@ model Category {
   id          Int       @id @default(autoincrement())
   createdAt   DateTime  @default(now())
   title       String
-  project     Project   @relation(fields: [projectID], references: [id])
-  projectID   Int       @unique
+  project     Project?   @relation(fields: [projectID], references: [id])
+  projectID   Int?       @unique
 }
 
 model Skills {
     id        Int       @id @default(autoincrement())
   createdAt   DateTime  @default(now())
   title       String
-  project     Project   @relation(fields: [projectID], references: [id])
-  projectID   Int
+  project     Project?   @relation(fields: [projectID], references: [id])
+  projectID   Int?
 }
