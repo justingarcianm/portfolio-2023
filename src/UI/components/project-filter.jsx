@@ -13,7 +13,7 @@ const ProjectFilter = (projects) => {
               return (
                 <div
                   key={skill.id}
-                  className="skill-select cursor-pointer px-4 py-1 bg-white rounded-2xl text-accent dark:text-accent-dark hover:scale-105 transition-all"
+                  className="skill-select cursor-pointer px-4 py-1 bg-white rounded-2xl text-accent dark:text-accent-dark hover:bg-primary transition-all"
                 >
                   {skill.title}
                 </div>

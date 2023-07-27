@@ -48,7 +48,7 @@ const Projects = ({ projects }) => {
         <a
           href="#"
           target="_blank"
-          className="rounded-full py-2 px-4 text-white bg-accent dark:bg-accent-dark text-center w-fit mx-auto"
+          className="rounded-full py-2 px-4 text-white bg-accent dark:bg-accent-dark text-center w-fit mx-auto flex uppercase dark:hover:bg-accent-hover hover:bg-accent-hover-dark transition-all"
         >
           View more on my github
         </a>

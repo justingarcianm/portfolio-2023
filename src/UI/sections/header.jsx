@@ -24,7 +24,7 @@ const Header = () => {
       return (
         <button
           onClick={() => setTheme("light")}
-          className="grid grid-cols-3 gap-2 items-center"
+          className="grid grid-cols-3 gap-2 items-center hover:text-accent-dark transition-all dark:hover:text-accent"
         >
           <BsSunFill />
         </button>
@@ -33,7 +33,7 @@ const Header = () => {
       return (
         <button
           onClick={() => setTheme("dark")}
-          className="grid grid-cols-3 gap-2 items-center"
+          className="grid grid-cols-3 gap-2 items-center hover:text-accent-dark transition-all dark:hover:text-accent"
         >
           <BsFillMoonFill />
         </button>
