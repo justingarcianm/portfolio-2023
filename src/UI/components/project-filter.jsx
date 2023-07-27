@@ -11,12 +11,14 @@ const ProjectFilter = (projects) => {
           {projectSkills &&
             projectSkills.map((skill) => {
               return (
-                <div
+                <span
                   key={skill.id}
+                  datatype={skill.title}
+                  onClick={() => console.log(skill.title)}
                   className="skill-select cursor-pointer px-4 py-1 bg-white rounded-2xl text-accent dark:text-accent-dark hover:bg-primary transition-all"
                 >
                   {skill.title}
-                </div>
+                </span>
               );
             })}
         </div>

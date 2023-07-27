@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import GithubIcon from "../icons/github";
+import LinkedinIcon from "../icons/linkedin";
 
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 
@@ -59,6 +60,7 @@ const Header = () => {
             <span className="animate-typing">_</span>
           </Link>
           <div className="flex justify-normal items-center gap-4">
+            <LinkedinIcon />
             <GithubIcon />
             {renderThemeChanger()}
           </div>

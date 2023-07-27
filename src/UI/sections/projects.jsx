@@ -24,7 +24,7 @@ const Projects = ({ projects }) => {
     <section className="min-h-screen flex justify-center items-center">
       <div className="container mx-auto py-8">
         <h2 className="font-bold text-6xl text-center text-accent dark:text-accent-dark pb-6 uppercase">My Projects</h2>
-        <ProjectFilter />
+        {/* <ProjectFilter /> */}
         <motion.div
           variants={variant}
           initial="initial"
