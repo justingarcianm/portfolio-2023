@@ -1,10 +1,10 @@
 const Hero = () => {
   return (
     <section className="min-h-screen flex justify-center items-center relative">
-      <div className="container mx-auto py-8 z-10">
+      <div className="container px-4 mx-auto py-8 z-10">
         <div className="grid grid-cols-5 justify-between items-center gap-4">
           <div className="col-span-5 lg:col-span-3">
-            <h1 className="font-title text-9xl drop-shadow-xl">
+            <h1 className="font-title text-6xl lg:text-9xl drop-shadow-xl">
               <span className="block">Hello, I&apos;m Justin</span>
               <span className="block text-accent dark:text-accent-dark">A Web Developer</span>
             </h1>

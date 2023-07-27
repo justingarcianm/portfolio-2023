@@ -25,7 +25,7 @@ const Header = () => {
       return (
         <button
           onClick={() => setTheme("light")}
-          className="grid grid-cols-3 gap-2 items-center hover:text-accent-dark transition-all dark:hover:text-accent"
+          className="hover:text-accent-dark transition-all dark:hover:text-accent"
         >
           <BsSunFill />
         </button>
@@ -34,7 +34,7 @@ const Header = () => {
       return (
         <button
           onClick={() => setTheme("dark")}
-          className="grid grid-cols-3 gap-2 items-center hover:text-accent-dark transition-all dark:hover:text-accent"
+          className="hover:text-accent-dark transition-all dark:hover:text-accent"
         >
           <BsFillMoonFill />
         </button>
@@ -49,7 +49,7 @@ const Header = () => {
       transition={{ delay: 0.25, duration: 1 }}
       className="shadow-md fixed bg-primary dark:bg-primary-dark min-w-full z-50"
     >
-      <div className="container mx-auto py-8">
+      <div className="container px-4 mx-auto py-8">
         <div className="flex justify-between items-center">
           <Link
             href={"/"}
@@ -59,7 +59,7 @@ const Header = () => {
             CodingJustin
             <span className="animate-typing">_</span>
           </Link>
-          <div className="flex justify-normal items-center gap-4">
+          <div className="flex justify-end items-center gap-4">
             <LinkedinIcon />
             <GithubIcon />
             {renderThemeChanger()}

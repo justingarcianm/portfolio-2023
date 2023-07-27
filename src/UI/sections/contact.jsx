@@ -21,7 +21,7 @@ const variant = {
 const Contact = () => {
   return (
     <section className="flex justify-center items-center relative dark:bg-accent-dark bg-accent">
-      <div className="container mx-auto py-16">
+      <div className="container px-4 mx-auto py-16">
         <motion.div
           variants={variant}
           initial="initial"

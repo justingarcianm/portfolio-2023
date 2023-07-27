@@ -22,7 +22,7 @@ const variant = {
 const Projects = ({ projects }) => {
   return (
     <section className="min-h-screen flex justify-center items-center">
-      <div className="container mx-auto py-8">
+      <div className="container px-4 mx-auto py-8">
         <h2 className="font-bold text-6xl text-center text-accent dark:text-accent-dark pb-6 uppercase">My Projects</h2>
         {/* <ProjectFilter /> */}
         <motion.div
@@ -38,6 +38,7 @@ const Projects = ({ projects }) => {
                   <motion.div
                     variants={variant}
                     key={project.id}
+                    className="col-span-3 lg:col-span-1"
                   >
                     <Project project={project} />
                   </motion.div>
